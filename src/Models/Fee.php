@@ -49,7 +49,7 @@ class Fee
      * @internal
      * @var integer
      */
-    public const FEE_FACTOR = 50000;
+    const FEE_FACTOR = 50000;
 
     /**
      * NEM network transaction fee.
@@ -57,7 +57,7 @@ class Fee
      * @internal
      * @var integer
      */
-    public const TRANSACTION_FEE = 3;
+    const TRANSACTION_FEE = 3;
 
     /**
      * NEM network maximum Fee Amount.
@@ -68,7 +68,7 @@ class Fee
      * @internal
      * @var integer
      */
-    public const MAX_AMOUNT_FEE = 25;
+    const MAX_AMOUNT_FEE = 25;
 
     /**
      * NEM Multisig Transaction Fee (in microXEM).
@@ -76,7 +76,7 @@ class Fee
      * @internal
      * @var integer
      */
-    public const MULTISIG = Fee::TRANSACTION_FEE * Fee::FEE_FACTOR;
+    const MULTISIG = 150000; // Fee::TRANSACTION_FEE * Fee::FEE_FACTOR
 
     /**
      * NEM Mosaic AND Namespaces common Fee (in microXEM).
@@ -84,7 +84,7 @@ class Fee
      * @internal
      * @var integer
      */
-    public const NAMESPACE_AND_MOSAIC = Fee::TRANSACTION_FEE * Fee::FEE_FACTOR;
+    const NAMESPACE_AND_MOSAIC = 150000; // Fee::TRANSACTION_FEE * Fee::FEE_FACTOR
 
     /**
      * NEM Root Namespace Provision Transaction Fee (in microXEM).
@@ -92,7 +92,7 @@ class Fee
      * @internal
      * @var integer
      */
-    public const ROOT_PROVISION_NAMESPACE = 100 * Amount::XEM;
+    const ROOT_PROVISION_NAMESPACE = 100000000; // 100 * Amount::XEM
 
     /**
      * NEM Sub Namespace Provision Transaction Fee (in microXEM).
@@ -100,7 +100,7 @@ class Fee
      * @internal
      * @var integer
      */
-    public const SUB_PROVISION_NAMESPACE = 10 * Amount::XEM;
+    const SUB_PROVISION_NAMESPACE = 10000000; // 10 * Amount::XEM
 
     /**
      * NEM Mosaic Definition Transaction Fee (in microXEM).
@@ -108,7 +108,7 @@ class Fee
      * @internal
      * @var integer
      */
-    public const MOSAIC_DEFINITION = 10 * Amount::XEM;
+    const MOSAIC_DEFINITION = 10000000; // 10 * Amount::XEM
 
     /**
      * NEM Multisig Signature Transaction Fee (in microXEM).
@@ -116,7 +116,7 @@ class Fee
      * @internal
      * @var integer
      */
-    public const SIGNATURE = Fee::TRANSACTION_FEE * Fee::FEE_FACTOR;
+    const SIGNATURE = 150000; // Fee::TRANSACTION_FEE * Fee::FEE_FACTOR
 
     /**
      * NEM Importance Transfer Transaction Fee (in microXEM).
@@ -124,7 +124,7 @@ class Fee
      * @internal
      * @var integer
      */
-    public const IMPORTANCE_TRANSFER = Fee::TRANSACTION_FEE * Fee::FEE_FACTOR;
+    const IMPORTANCE_TRANSFER = 150000; // Fee::TRANSACTION_FEE * Fee::FEE_FACTOR
 
     /**
      * NEM Multisig Aggregate Modification Transaction Fee (in microXEM).
@@ -132,7 +132,7 @@ class Fee
      * @internal
      * @var integer
      */
-    public const MULTISIG_AGGREGATE_MODIFICATION = 10 * Fee::FEE_FACTOR;
+    const MULTISIG_AGGREGATE_MODIFICATION = 500000; // 10 * Fee::FEE_FACTOR
 
     /**
      * Calculate the needed fee for a provided `$transaction` NEM transaction

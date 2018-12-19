@@ -38,19 +38,19 @@ class Message
      * @internal
      * @var integer
      */
-    public const TYPE_HEX = 0;
+    const TYPE_HEX = 0;
 
     /**
      * @internal
      * @var integer
      */
-    public const TYPE_SIMPLE = 1;
+    const TYPE_SIMPLE = 1;
 
     /**
      * @internal
      * @var integer
      */
-    public const TYPE_ENCRYPTED = 2;
+    const TYPE_ENCRYPTED = 2;
 
     /**
      * List of fillable attributes
