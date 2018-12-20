@@ -114,7 +114,7 @@ class TimeWindow
         if ($this->getAttribute("timeStamp")) {
             // from NIS to UTC
             $ts = (int) $this->getAttribute("timeStamp");
-            return self::$nemesis + (1000 * $ts);
+            return self::$nemesis + $ts;
         }
         else {
             // has UTC
