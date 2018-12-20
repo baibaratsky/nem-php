@@ -62,12 +62,12 @@ class Transaction
      * @internal
      * @var integer
      */
-    const VERSION_1 = 0x68000000 | 1;
-    const VERSION_2 = 0x68000000 | 2;
+    const VERSION_1 = 1744830465; // 0x68000000 | 1
+    const VERSION_2 = 1744830466; // 0x68000000 | 2
     const VERSION_1_TEST = -1744830463;
     const VERSION_2_TEST = -1744830462;
-    const VERSION_1_MIJIN = 0x60000000 | 1;
-    const VERSION_2_MIJIN = 0x60000000 | 2;
+    const VERSION_1_MIJIN = 1610612737; // 0x60000000 | 1
+    const VERSION_2_MIJIN = 1610612738; // 0x60000000 | 2
 
     /**
      * List of valid Transaction Types on the NEM network.
