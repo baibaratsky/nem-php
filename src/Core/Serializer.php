@@ -125,7 +125,7 @@ class Serializer
      * @param   integer     $number
      * @return  array       Returns a byte-array with values in UInt8 representation.
      */
-    public function serializeInt(int $number = null)
+    public function serializeInt($number = null)
     {
         if (null === $number) {
             return $this->serializeInt(self::NULL_SENTINEL);
@@ -154,7 +154,7 @@ class Serializer
      * @param   string  $str
      * @return  array       Returns a byte-array with values in UInt8 representation.
      */
-    public function serializeString(string $str = null)
+    public function serializeString($str = null)
     {
         if (null === $str) {
             $uint8 = $this->serializeInt(null);
@@ -185,7 +185,7 @@ class Serializer
      * @param   string  $str
      * @return  array       Returns a byte-array with values in UInt8 representation.
      */
-    public function serializeUInt8(array $uint8Str = null)
+    public function serializeUInt8($uint8Str = null)
     {
         if (null === $uint8Str) {
             $uint8 = $this->serializeInt(null);
@@ -210,7 +210,7 @@ class Serializer
      * @param   integer     $long
      * @return  array
      */
-    public function serializeLong(int $long = null)
+    public function serializeLong($long = null)
     {
         if (null === $long) {
             // long on 8 bytes always
